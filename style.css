@@ -1,0 +1,331 @@
+
+/* Basic CSS for the layout and design */
+#hh{
+    visibility: hidden;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:url('pexels-pixabay-237272 (1).jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left h1 {
+    margin: 0 20px 0 0;
+}
+
+.navbar .tag {
+    display: flex;
+    gap: 50px;
+    margin: auto;
+}
+
+.navbar .tag a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .search {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .search input {
+    padding: 5px;
+}
+
+.navbar .search button {
+    padding: 5px 10px;
+}
+
+.sec {
+    padding: 20px;
+}
+
+#recommendations {
+    margin-bottom: 100px; /* Ensure there's space for fixed social media div */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.explore {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.social-item {
+    position: relative;
+    width: 50px; /* Adjust as needed */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.social-item:hover .overlay {
+    opacity: 1;
+}
+
+.extra-content {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.navbar h1 {
+    color: #ffffff;
+    margin: 0;
+    padding: 0 20px;
+}
+.con_us{
+    display: inline-flex;
+   
+    height: 20rem;
+    text-align: center; 
+}
+.form_us{
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    /* max-width: 300px; */
+    /* margin: 20px auto; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: inline-flex;
+    MARGIN-LEFT: 16rem;
+}                       
+
+.navbar a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 2px solid;
+    border-radius: 45px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent hover effect */
+    color: black;
+}
+
+.tag {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap value as needed */
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.search input[type="text"] {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border-radius: 33px;
+    height: 44px;
+    background-color: #b6dcff;
+}
+
+.search button {
+    color: white;
+    padding: 6px 10px;
+    margin-left: 8px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #5d97ff;
+}
+
+.search button:hover {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent hover effect */
+}
+
+.content {
+    padding: 20px;
+}
+
+
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.about-section, .contact-section {
+    
+    padding: 40px;
+    
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+}
+
+.content-section {
+
+    border-radius: 10px;
+    padding: 20px;
+    height: 40rem;
+    width: 100%;
+    
+}
+
+/* Glass effect for contact section */
+.contact-section.glass {
+   
+    
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    color: #fff; /* White text for contrast */
+   
+}
+
+.contact-section h2,
+.contact-section p,
+.contact-section label {
+    color: #fff; /* Ensure text is readable */
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 800px; */
+    margin: 0 auto;
+    border: 2px solid white;
+    width: 23rem;
+    padding: 25px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+   
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.6); /* Semi-transparent white border */
+    border-radius: 4px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    color: #fff; /* White text */
+}
+
+.contact-section input[type="text"]::placeholder,
+.contact-section input[type="email"]::placeholder,
+.contact-section textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Semi-transparent white for placeholders */
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: rgba(13, 154, 229, 0.3); /* Semi-transparent white */
+    color: #fcf8f8; /* White text */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly more opaque on hover */
+}
+
+#home h1{
+    font-family: cursive;
+    font-size: xxx-large;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.recommendations-section {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px; /* Adjust this width as needed */
+}
+
+.recommendation-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ccc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.recommendation-item h3, .recommendation-item p {
+    margin: 10px 0;
+}
+
